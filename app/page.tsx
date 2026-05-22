@@ -83,7 +83,12 @@ const skills = [
   },
   {
     title: "Cloud Infrastructure",
-    points: ["Vercel deployment", "Containerized services", "Scalable architecture", "Operational reliability"],
+    points: [
+      "Vercel deployment",
+      "Containerized services",
+      "Scalable architecture",
+      "Operational reliability",
+    ],
   },
 ];
 
@@ -163,8 +168,8 @@ export default function Home() {
 
   return (
     <div className="relative min-h-screen overflow-x-hidden bg-[#05060d] text-slate-100">
-      <div className="pointer-events-none fixed inset-0 bg-[radial-gradient(circle_at_20%_10%,rgba(109,40,217,0.20),transparent_35%),radial-gradient(circle_at_80%_20%,rgba(56,189,248,0.13),transparent_32%),radial-gradient(circle_at_50%_90%,rgba(99,102,241,0.10),transparent_40%)]" />
-      <div className="pointer-events-none fixed inset-0 opacity-[0.06] [background-image:linear-gradient(to_right,white_1px,transparent_1px),linear-gradient(to_bottom,white_1px,transparent_1px)] [background-size:80px_80px]" />
+      <div className="pointer-events-none fixed inset-0 bg-[radial-gradient(circle_at_20%_10%,rgba(109,40,217,0.20),transparent_35%),radial-gradient(circle_at_80%_20%,rgba(56,189,248,0.13),transparent_40%),radial-gradient(circle_at_50%_80%,rgba(56,189,248,0.07),transparent_45%)]" />
+      <div className="pointer-events-none fixed inset-0 opacity-[0.06] [background-image:linear-gradient(to_right,white_1px,transparent_1px),linear-gradient(to_bottom,white_1px,transparent_1px)] [background-size:120px_120px] [mask-image:radial-gradient(circle_at_top,black,transparent_70%)]" />
 
       <motion.div
         initial={false}
@@ -185,11 +190,7 @@ export default function Home() {
             <p>&gt; Synchronizing engineering + AI + security narrative…</p>
             <p>&gt; Founder signal: SHUBHAM DESHMUKH</p>
           </div>
-          <motion.div
-            className="mt-6 h-1 overflow-hidden rounded-full bg-white/10"
-            initial={{ opacity: 0.4 }}
-            animate={{ opacity: 1 }}
-          >
+          <motion.div className="mt-6 h-1 overflow-hidden rounded-full bg-white/10" initial={{ opacity: 0.4 }} animate={{ opacity: 1 }}>
             <motion.div
               className="h-full bg-gradient-to-r from-cyan-300 via-violet-300 to-indigo-300"
               initial={{ width: 0 }}
@@ -233,12 +234,12 @@ export default function Home() {
           }}
         >
           <motion.div
-            initial={{ opacity: 0, y: 40 }}
+            initial={false}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: reduceMotion ? 0.2 : 0.8 }}
             style={reduceMotion ? undefined : heroTiltStyle}
-            className="w-full rounded-3xl border border-white/12 bg-[linear-gradient(135deg,rgba(255,255,255,0.08),rgba(255,255,255,0.02))] p-8 shadow-[0_0_80px_rgba(76,29,149,0.30)] backdrop-blur-xl md:p-12"
+            className="w-full rounded-3xl border border-white/12 bg-[linear-gradient(135deg,rgba(255,255,255,0.08),rgba(255,255,255,0.02))] p-8 shadow-[0_0_80px_rgba(76,29,149,0.30)] backdrop-blur-xl md:p-14"
           >
             <p className="text-xs tracking-[0.3em] text-slate-300">CINEMATIC PORTFOLIO EXPERIENCE</p>
             <h1 className="mt-4 text-4xl font-semibold leading-tight tracking-[0.04em] text-white md:text-7xl">
@@ -272,9 +273,11 @@ export default function Home() {
             className="rounded-2xl border border-white/10 bg-white/[0.04] p-7 md:p-10"
           >
             <p className="text-xs tracking-[0.3em] text-slate-300">ABOUT</p>
-            <h2 className="mt-3 text-2xl font-medium text-white md:text-4xl">Engineering cinematic products with secure intelligence.</h2>
+            <h2 className="mt-3 text-2xl font-medium text-white md:text-4xl">
+              Engineering cinematic products with secure intelligence.
+            </h2>
             <p className="mt-5 max-w-4xl text-slate-300">
-              I design and ship premium digital systems at the intersection of full stack engineering, agentic AI, and cybersecurity. My work emphasizes clarity, precision, and resilient execution—from user-facing interfaces to model-aware backend security.
+              I design and ship premium digital systems at the intersection of full stack engineering, agentic AI, and cybersecurity. My work emphasizes clarity, precision, and resilient execution.
             </p>
           </motion.div>
         </section>
@@ -380,7 +383,7 @@ export default function Home() {
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <MagneticButton href="mailto:shubhamdeshmukh843@gmail.com">Email Shubham</MagneticButton>
-              <MagneticButton href="https://linkedin.com/in/shubham--deshmukh/" external variant="secondary">
+              <MagneticButton href="https://linkedin.com/in/shubham-deshmukh/" external variant="secondary">
                 LinkedIn
               </MagneticButton>
               <MagneticButton href="https://github.com/Shubhamhavealgorithm" external variant="secondary">
