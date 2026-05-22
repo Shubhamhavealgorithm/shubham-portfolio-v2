@@ -380,7 +380,7 @@ export default function Home() {
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <MagneticButton href="mailto:shubhamdeshmukh843@gmail.com">Email Shubham</MagneticButton>
-              <MagneticButton href="https://linkedin.com/in/shubham-deshmukh/" external variant="secondary">
+              <MagneticButton href="https://linkedin.com/in/shubham--deshmukh/" external variant="secondary">
                 LinkedIn
               </MagneticButton>
               <MagneticButton href="https://github.com/Shubhamhavealgorithm" external variant="secondary">

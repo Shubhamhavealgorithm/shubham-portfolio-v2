@@ -33,7 +33,7 @@ npm run start
 ## Contact wiring
 
 - Email: `shubhamdeshmukh843@gmail.com`
-- LinkedIn: `https://linkedin.com/in/shubham-deshmukh/`
+- LinkedIn: `https://linkedin.com/in/shubham--deshmukh/`
 - GitHub: `https://github.com/Shubhamhavealgorithm`
 
 ## Deploy to Vercel
