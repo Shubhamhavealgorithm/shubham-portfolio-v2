@@ -21,7 +21,7 @@ npm run start
 
 ## Included sections
 
-- Cinematic intro boot sequence (with reduced-motion support)
+- Cinematic intro boot sequence (with reduced-motion override to keep animations on)
 - Founder-style hero with layered depth and premium CTA interactions
 - Sticky glass navbar with smooth section navigation
 - Scroll-paced storytelling sections
@@ -49,4 +49,3 @@ npm run start
 2. Add `shubhamdeshmukh.com` and `www.shubhamdeshmukh.com`.
 3. Add DNS records from Vercel at your domain registrar.
 4. Wait for SSL provisioning and verify both root + `www` resolve.
-
